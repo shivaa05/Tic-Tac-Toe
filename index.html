@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper blur">
+    <div class="message hide">
+      <h2>Congratulations!</h2>
+      <p>Yay! Player <span class="player-won">X</span> Won The Game</p>
+      <div class="btns">
+        <button class="close">Close</button>
+        <button class="play-again">Play Again</button>
+      </div>
+    </div>
+    <div class="draw hide">
+      <h2>Opps! Game Drawn</h2>
+      <p>Do you want to play again</p>
+      <div class="btns">
+        <button class="close">Close</button>
+        <button class="play-again">Play Again</button>
+      </div>
+    </div>
+    <div class="heading">
+        <h1>Tic Tac Toe</h1>
+        <p>Made by Shiva Verma</p>
+      </div>
+      <div class="boxes">
+        <div class="box" id="1"></div>
+        <div class="box" id="2"></div>
+        <div class="box" id="3"></div>
+        <div class="box" id="4"></div>
+        <div class="box" id="5"></div>
+        <div class="box" id="6"></div>
+        <div class="box" id="7"></div>
+        <div class="box" id="8"></div>
+        <div class="box" id="9"></div>
+      </div>
+      <h2 class="turn ">Player <span class="player">X</span> Turn</h2>
+      <button class="replay">Replay</button>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>

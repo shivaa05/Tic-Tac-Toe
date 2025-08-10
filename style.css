@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+.wrapper {
+  height: 100vh;
+  background: #010016;
+  color: white;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 30px;
+}
+
+.heading h1 {
+  font-size: 50px;
+  color: coral;
+}
+
+.heading p {
+  color: yellow;
+  overflow: hidden;
+  text-wrap: nowrap;
+  width: 19ch;
+  border-right: 3px solid;
+  border-radius: 10px;
+  animation: typing 6s ease-in-out infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  30% {
+    width: 19ch;
+  }
+  50% {
+    width: 19ch;
+  }
+  70% {
+    width: 19ch;
+  }
+  99% {
+  }
+  100% {
+    width: 0ch;
+  }
+}
+.turn {
+  margin-top: 30px;
+  font-size: 28px;
+  color: rgb(113, 240, 113);
+}
+.boxes {
+  display: grid;
+  gap: 3px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.box {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  background: #605254;
+  cursor: pointer;
+  animation: bubble 0.5s ease-out;
+}
+@keyframes bubble {
+  from {
+    scale: 0;
+    margin-left: -10px;
+  }
+  to {
+    scale: 1;
+    margin-left: 0px;
+  }
+}
+.box:hover {
+  background: #453a3c;
+}
+.message,
+.draw {
+  position: absolute;
+  min-height: 100px;
+  background: #212121;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: 100;
+}
+
+h2 {
+  color: rgb(227, 216, 65);
+}
+.btns{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.play-again,.close {
+  background: rgb(11, 144, 42);
+  padding: 3px 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 6px;
+}
+.close{
+  background-color: tomato;
+}
+.hide {
+  display: none;
+}
+
+.replay{
+  margin-top: 30px;
+  padding: 5px 10px;
+  background: blue;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.replay:hover{
+  background: rgb(3, 3, 153);
+}
+@media (min-width: 600px) {
+  .box {
+    height: 80px;
+    width: 80px;
+    font-size: 50px;
+    font-weight: 700;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .message,
+  .draw {
+    min-height: 200px;
+    min-width: 300px;
+    font-size: 25px;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 20px;
+  }
+  .turn {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 50px;
+  }
+  .play-again ,.close{
+    padding: 8px 20px;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .replay{
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+  .heading h1 {
+    font-size: 60px;
+  }
+  .heading p {
+    font-size: 20px;
+  }
+  .btns{
+    gap: 30px;
+  }
+}
