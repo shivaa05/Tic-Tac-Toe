@@ -69,9 +69,15 @@ TicTacToe/
 
 ##  Screenshots
 
-![Game Screenshot](screenshot1.png)  
-![Game Screenshot](screenshot2.png)  
-![Game Screenshot](screenshot3.png)  
+![Game Screenshot](./screenshots/screenshot1.png)  
+![Game Screenshot](./screenshots/screenshot2.png)  
+![Game Screenshot](./screenshots/screenshot3.png)  
+
+---
+
+## Live Demo
+
+[Click here to play Tic Tac Toe] https://shivaa05.github.io/Tic-Tac-Toe/
 
 ---
 
